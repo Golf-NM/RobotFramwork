@@ -18,7 +18,7 @@ Search "นนท์ พิง" From YouTube
     Open browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Element Should Be Visible    ${LOCATOR-SEARCH}
-    Input Text    ${LOCATOR-SEARCH}    นนท์ พิง
+    Input Text    ${LOCATOR-SEARCH}    ${WORD-SEARCH}
     Press Keys    ${LOCATOR-SEARCH}    RETURN
     Sleep    8s
     Page Should Contain Element    ${XPATH-FRIST-ELEMENT}    ${VALUE-FRIST-ELEMENT}
