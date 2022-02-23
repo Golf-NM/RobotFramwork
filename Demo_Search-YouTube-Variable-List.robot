@@ -6,10 +6,9 @@ ${URL}    https://www.youtube.com/
 ${BROWSER}    chrome
 ${LOCATOR-SEARCH}    name:search_query
 ${XPATH-FRIST-ELEMENT}    css=.miniplayer-title.style-scope.ytd-miniplayer
-
-
 @{WORD-SEARCH}    นนท์ พิง    เกรท    ลิปตา    ว่าน ธนกฤต
 @{VALUE-FRIST-ELEMENT}    [เพลงจากละครกระเช้าสีดา] - นนท์ ธนนท์    เกรท วรินทร เผยเคยแอบชอบ แพท ณปภา 😳 | Talk Part 2
+
 *** Keywords ***
 
 *** Test Cases ***
