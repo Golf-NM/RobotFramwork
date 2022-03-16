@@ -21,11 +21,11 @@ Login - Invalid Username And Password
     Input Text    ${LOCATOR_EMAIL}    ${ADMIN_EMAIL}
     Input Text    ${LOCATOR_PASSWORD}    ${ADMIN_PASSWORD}    
     
-    ${hidden_objs}=  Execute Javascript
+    ${Button-SignIn}=  Execute Javascript
     ...  return document.getElementById('sw-sign-in-submit-btn')
-    ${select_obj}=   Set Variable    ${hidden_objs}
-    Wait until keyword succeeds    5s    3s        Set Focus To Element    ${select_obj}
-    Wait until keyword succeeds    5s    3s        Click Element     ${select_obj}
+    ${Locator-SignIn}=   Set Variable    ${Button-SignIn}
+    Wait until keyword succeeds    5s    3s        Set Focus To Element    ${Locator-SignIn}
+    Wait until keyword succeeds    5s    3s        Click Element     ${Locator-SignIn}
 
     ${afterInput}=    Execute Javascript    
     ...    return document.getElementsByClassName('login-error')
