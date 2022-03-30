@@ -69,13 +69,4 @@ Calendar - Select date and time
        
     Should Be Equal    ${VALUE-TITLE-MEETING}    Testname Meeting with Nikhil
     Capture Page Screenshot    Calendar-Selenium_{index}.png
-    # Get All Links
-
-
-
-
-   
-
-
-
     
