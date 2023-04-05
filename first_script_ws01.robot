@@ -4,7 +4,7 @@ Library        String
 
 *** Variables ***
 ${url}         https://nejavu.com/
-${type}        edge
+${browser}        edge
 ${home_page_logo.locator}    xpath=//img[contains(@class,'logo_desktop')]
 ${search_input.locator}      xpath=//form[@class='search']//input[@name='s']
 ${text_search}               Super
@@ -28,7 +28,7 @@ ${basket_empty.text}       ตะกร้าว่างเปล่า
 ${GLOBAL_TIMEOUT}    10s
 *** Keywords ***
 Open nejavu website
-    SeleniumLibrary.Open browser    ${url}    ${type}
+    SeleniumLibrary.Open browser    ${url}    ${browser}
     SeleniumLibrary.Maximize Browser Window
 
 Page should display logo home page
